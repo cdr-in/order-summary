@@ -35,6 +35,7 @@ article {
 article img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  max-width: 100%;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h1 {
 
 p {
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
   color: hsl(224, 23%, 55%);
 }
 
@@ -106,4 +107,22 @@ p {
   color: hsl(223, 47%, 23%);
   cursor: pointer;
   font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: url(images/pattern-background-mobile.svg);
+  }
+
+  article {
+    width: 325px;
+  }
+
+  .all-info {
+    padding-left: 60px;
+  }
+
+  .btn {
+    padding: 15px 50px;
+  }
 }
